@@ -1,0 +1,219 @@
+/*
+Theme Name: Dinergirl Theme 
+Theme URI:  http://www.dinergirl.com/
+Description:  Dinergirl Theme
+Author: Seth Melani
+Author URI:   http://www.sethjamesdesign.com/
+Version:  1.0
+Tags: Responsive, simple
+License:
+License URI:
+General comments (optional).
+ */
+
+
+
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size:2.375em;
+    font-weight:normal;
+    padding-top: 1.5%;
+    margin-bottom: 2.5%;
+}
+
+h2 {
+    font-size:2em;
+    font-weight:normal;
+    padding-top:1.5%;
+    margin-bottom:2%;
+}
+
+p {
+    font-size:1.25em;
+    line-height: 1.875em;
+    padding-top:1%;
+    margin-bottom:1.5%;
+}
+
+/* HEADER */
+
+header, footer {
+    width:100%;
+    max-width: 1280px;
+    margin:0 auto;
+    background:#e6e7e8;
+}
+
+header img {
+    width:15%;
+    padding-top:.75%;
+}
+
+/* NAV*/
+
+#main_menu{
+    font-size: 1.25em;
+    float:right;
+    width:57%;
+    margin-top: 2.5%;
+    
+}
+
+#main_menu ul li {
+    list-style: none;
+    display:inline;
+    width:20%;
+    float:left;
+    text-align: center;
+}
+
+#main_menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width:100%;
+    color:black;
+}
+
+#main_menu ul li a:hover {
+    color:#6bc7ba;
+}
+
+/* SOCIAL AND BANNER */
+
+#banner, #header-social {
+    width:100%;
+    max-width: 1280px;
+    margin:0 auto;
+    position:relative;
+}
+
+#banner img {
+    width: 33.3%;
+    margin-left: 33.3%;
+    padding:3% 0;
+}
+
+#social {
+    width:15%;
+    position: absolute;
+    left:73%;
+    
+}
+
+#social img {
+    width:18%;
+    padding:1.5% 0;
+    margin:0 1.8%;
+}
+
+/* MAIN */
+
+main, #header-content, #footer-content {
+    width:100%;
+    max-width: 980px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+
+main a {
+    text-decoration: none;
+    color:black;
+}
+
+.more {
+    color:#6bc7ba;
+    
+}
+
+#home-ctas section {
+    width:22%;
+    float:left;
+    margin: 5% 1.5%;
+}
+
+#home-ctas section img{
+    width:100%;
+}
+
+#home-ctas h2 {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    color:#6bc7ba;
+    font-size:2.2em;  
+}
+
+#home-ctas section:hover h2 {
+    color:#666;
+}
+
+img.right {
+    float: right;
+    width:40%;
+    margin: 1.5%;
+} 
+
+/* BLOG */
+
+.blog-left {
+    font-size: 85%;
+    width:30%;
+    float:left;
+    padding:1.5%;
+    margin: 2% 0;
+}
+
+.blog-right {
+    font-size: 85%;
+    width:30%;
+    float:right;
+    padding:1.5%;
+    margin: 2% 0;
+}
+
+.blog-left img, .blog-right img {
+    width:100%;
+}
+
+
+/* FOOTER */
+
+footer {
+    overflow: auto;
+    padding:2% 0;
+    margin-top:5%;
+}
+
+footer img {
+    width:30%;
+    margin:0 35%;
+}
+
+#social-footer {
+    width:45%;
+    margin: 0 auto;
+    padding:1% 0 2% 0;
+}
+
+#social-footer img {
+    width:16%;
+    margin:0 4%;
+}
+
+footer #main_menu {
+    float:none;
+    margin:0 auto;
+
+}
+
