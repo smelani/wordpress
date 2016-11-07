@@ -1,4 +1,4 @@
-    <?php get_header();?> <!--HEADER-->
+<?php get_header();?> <!--HEADER-->
 
      <!--Begin Main-->
      <main>
@@ -38,5 +38,5 @@
     </main>
     <!--End Main-->
 
-    <?php get_footer();?><!--FOOTER-->
+<?php get_footer();?><!--FOOTER-->
     

@@ -1,6 +1,5 @@
-    <?php get_header();?> <!--HEADER-->
+<?php get_header();?> <!--HEADER-->
     
-
     <!--Begin Banner-->
     <div id="banner">
         
@@ -50,7 +49,7 @@
                     <h2>Contact</h2>
                 </section></a>
             
-            </div>
+        </div>
         
             <?php
             // Get the last 2 posts.
@@ -65,7 +64,4 @@
     </main>
     <!--End Main-->
 
-
-    
-
-    <?php get_footer();?><!--FOOTER-->
+<?php get_footer();?><!--FOOTER-->

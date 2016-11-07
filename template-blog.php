@@ -43,10 +43,4 @@
     </main>
     <!--End Main-->
 
-
-
-
-
-
-
 <?php get_footer();?><!--FOOTER-->
