@@ -2,7 +2,7 @@
 
      <!--Begin Main-->
      <main>
-    
+        
         <div id="content">
 
         <!-- the loop -->
@@ -32,11 +32,12 @@
             <p><?php ('Sorry no posts match your criteria');?></p>
             <?php endif;?>
             <!--end the loop-->
-
+            
+            
         </div>
-    
+        <?php get_sidebar();?>
     </main>
     <!--End Main-->
-
+    
 <?php get_footer();?><!--FOOTER-->
     
