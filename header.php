@@ -26,8 +26,8 @@
             <nav id="main_menu">
                 <?php wp_nav_menu($mainMenu); ?>
             </nav>
-            <h1><a href="<?php echo get_option('home')?>"><img src="
-                <?php bloginfo('template_directory'); ?>/images/header-logo.png" alt="header-logo"></a></h1>
+            <a href="<?php echo get_option('home')?>"><img src="
+                <?php bloginfo('template_directory'); ?>/images/header-logo.png" alt="header-logo"></a>
         </div>
     </header>
     <!--End Header-->
