@@ -5,6 +5,7 @@ register_nav_menu("main_menu","Main Menu");
 
 
 add_theme_support('post-thumbnails');
+add_image_size('blog-thumb', 250, 150, false);
 
 
 add_action('widgets_init', 'my_sidebar');
