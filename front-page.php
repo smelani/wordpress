@@ -50,15 +50,15 @@
                 </section></a>
             
         </div>
-        
+            
+            <!--Get the latest three posts-->
             <?php
-            // Get the last 2 posts.
             global $post;
-            $args = array( 'posts_per_page' => 2 );
+            $args = array( 'posts_per_page' => 3 );
             $myposts = get_posts( $args );
 
             foreach( $myposts as $post ) :	setup_postdata($post); ?>
-            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2><br/>
+            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
             <?php the_excerpt(); ?>
             <?php endforeach; ?>
     </main>

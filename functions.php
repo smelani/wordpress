@@ -3,6 +3,10 @@
 
 register_nav_menu("main_menu","Main Menu");
 
+
+add_theme_support('post-thumbnails');
+
+
 add_action('widgets_init', 'my_sidebar');
 
     function my_sidebar(){
