@@ -1,7 +1,13 @@
 <?php get_header(); ?>
-<div id="content">
-	<p>Sorry, but that page doesn't exist</p>
-    <p>Try searching for something</p>
-    <p><?php get_search_form(); ?></p>
-</div>
+<main>
+    
+    <div class="error">
+            
+        <h1>SORRY!</h1> 
+        <h2>That page doesn't exist</h2>    
+        <h3><?php get_search_form(); ?></h3>
+            
+    </div>
+    
+</main>
 <?php get_footer(); ?>
