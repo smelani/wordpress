@@ -11,7 +11,14 @@
 
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h1>
                 
-                <?php the_post_thumbnail(); ?>
+                <?php
+                    if (is_mobile()) {
+                        the_post_thumbnail('blog-thumb');
+                        }else {
+                            the_post_thumbnail('featured_image');
+                        } 
+                ?>
+                
                 
                 <div class="full-content">
                     

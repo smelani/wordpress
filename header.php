@@ -3,6 +3,8 @@
 <head>
     
     <meta charset="<?php bloginfo('charset');?>"/>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width"/>
     
     <title><?php bloginfo('name');?><?php wp_title();?></title>
     
@@ -17,13 +19,34 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/bf85faea57.js"></script>
     
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <!-- Flexslider css and js -->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
+    <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
+    
+    <!-- Flexslider Call -->
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider();
+        });
+    </script>
+    
+    <!--Toggle nav js-->
+    <script src="<?php bloginfo('template_directory'); ?>/js/toggle-nav.js"></script>
+    
 </head>
 <body <?php body_class();?>>
     
     <!--Begin Header-->
     <header>
         <div id="header-content">
-            <nav id="main_menu">
+            
+            <!-- Menu button of mobil-->
+            <a href="#" id="menu-icon"><span>&#8801;</span></a>
+            
+            <nav id="main_menu" class="mobile-menu">
                 <?php wp_nav_menu($mainMenu); ?>
             </nav>
             <a href="<?php echo get_option('home')?>"><img src="

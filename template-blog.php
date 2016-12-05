@@ -18,13 +18,14 @@
             <p><?php ('Sorry no posts match your criteria');?></p>
             <?php endif;?>
             <!--end the loop-->
-        
+            
             
             <!-- Get the posts for the page based on category-->
             <?php
                 if (is_page()) {
                   $cat=get_cat_ID($post->post_title); //use page title to get a category ID
                   $posts = get_posts ("cat=$cat&showposts=5");
+                    
                   if ($posts) {
                     foreach ($posts as $post):
                       setup_postdata($post); ?>

@@ -29,7 +29,7 @@ body {
 #content {
     width:71%;
     float:left;
-    margin-bottom: 2.5%;
+    margin-bottom:5%;
 }
 
 h1 {
@@ -75,6 +75,7 @@ header img {
     float:right;
     width:57%;
     margin-top: 1.7%;
+    overflow: auto;
 }
 
 #main_menu ul li {
@@ -96,6 +97,11 @@ header img {
     color:#6bc7ba;
 }
 
+#menu-icon {
+    display: none;
+    
+}
+
 /* SOCIAL AND BANNER */
 
 #header-social {
@@ -106,16 +112,25 @@ header img {
 }
 
 #banner {
+    color:black;
     width:100%;
     margin:0 auto;
+    margin-bottom: 5%;
+    position:relative;
 }
 
 #banner img {
-    width: 33.3%;
+    width:100%;
+}
+
+#banner img.main-logo {
+    width: 33%;
     max-width: 400px;
     display: block;
-    margin:0 auto;
-    padding:3% 0;
+    position:absolute;
+    top:17%;
+    left:10%;
+    z-index: 9;
 }
 
 #social {
@@ -123,6 +138,7 @@ header img {
     position: absolute;
     left:73%;
     margin-top:.75%;
+    z-index: 9;
     
 }
 
@@ -225,6 +241,47 @@ img.right {
     width:100%;
 }
 
+/* CONTACT and COMMENT FORM */
+form {
+    border:2px solid #6bc7ba;
+    padding:3%;
+    width:50%;
+    margin:0 auto;
+}
+
+form p {
+    padding:0;
+    margin:0;
+    font-size:.9em;
+}
+
+form p label{
+    width:90%;
+    margin-bottom:.5%;
+}
+
+form p label input {
+    width:90%;
+    padding:1%;
+}
+form  p label textarea, #comment {
+    width:92%;
+}
+
+#commentform {
+    width:50%;
+    margin: 3% auto;
+}
+
+#url, #author, #email {
+    width:38%;
+    margin-bottom:2%;
+}
+
+#commentform label small {
+    width:60%;
+    float:left;
+}
 /* 404 Page */
 .error {
     width:60%;
@@ -256,8 +313,8 @@ footer img {
 }
 
 #social-footer img {
-    width:16%;
-    margin:0 4%;
+    width:20%;
+    margin: 0 2%;
 }
 
 footer #main_menu {
@@ -266,3 +323,102 @@ footer #main_menu {
 
 }
 
+/* Begin Responsive Styles */
+
+@media screen and (max-width:769px){
+    
+    body {
+        font-size:75%;
+    }
+    
+    main, #header-content, #footer-content {
+        width:90%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:450px) {
+    
+    body {
+        font-size:65%;
+    }
+    
+    header {
+        padding:2.5% 0;
+        /*height:40px;*/
+    }
+    
+    header img {
+        width:25%;
+        margin-top:2%;
+    }
+    
+    nav#main_menu {
+        display:none;
+        width:30%;
+        position:absolute;
+        z-index: 12;
+        top:7.75%;
+        left:65%;
+    }
+    
+    #main_menu ul li{
+        width:100%;
+        display:block;
+        text-align: center;
+        padding:2.5% 0;
+        background:rgba(230, 231, 232, .7); 
+    }    
+   
+    #menu-icon {
+        display:block;
+        width:10%;
+        float:right;
+        font-size: 2.75em;
+    }
+    
+    #menu-icon span {
+        padding-right:3%;
+        float:right;
+        color:rgb(77, 77, 77);
+        overflow: auto; 
+    }
+    
+    #social {
+        width:30%;
+        left:65%;
+    }
+    
+    main {
+        margin-top:10%;
+    }
+    
+    #home-ctas section {
+        width:70%;
+        float:none;
+        margin:2% auto;
+        padding:5% 0;
+    }
+    
+     #home-ctas h2 {
+        font-size:3em;
+    }
+    
+    #content {
+        width:100%;
+    }
+    
+    #commentform {
+        width:80%;
+    }
+    
+    #frontpage-posts, #sb-primary {
+        display:none;
+    }
+    
+    #social-footer {
+        width:70%;
+    }
+}
